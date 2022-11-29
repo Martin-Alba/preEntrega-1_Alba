@@ -6,9 +6,8 @@
 
 body{
     height: 100vh;
-    background-image: url(../img/helloThere.png);
+    background-image: url(../img/helloThere.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
