@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -6,8 +8,52 @@
 
 body{
     height: 100vh;
-    background-image: url(../img/helloThere.jpg);
+    width: 100vw;
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.7)0%, rgba(0,0,0,0.3)50%, rgba(0,0,0,0.7)100%), url(../img/leMans.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 40%;
+    height: auto;
+    background: rgba(0,0,0,0.45);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+.card div h1{
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color: rgb(230, 230, 230);
+    letter-spacing: 2px;
+    font-size: 3em;
+}
+
+.card div p{
+    color: rgb(230, 230, 230);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+}
+
+.fixed img{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    background-color: blueviolet;
+    border-radius: 3px;
+    transition: all 0.3s ease-out;
+}
+
+.fixed img:hover{
+    width: 40px;
 }

@@ -1,11 +1,17 @@
 let user = prompt("Ingrese su nombre de usuario.");
-let password = prompt("Ingrese su contraseña.");
+let password;
 
-//! separar while (logea por mas que la contraseña este mal).
-
-while((user.toLowerCase()) != "martin064" && (password != "Mrt.064")){
-    alert("Usuario y/o contraseña incorrecto, intente nuevamente");
+while(user.toLowerCase() != "martin064"){
+    alert("El usuario ingresado no existe, ingrese un usuario valido.");
     user = prompt("Ingrese su nombre de usuario.");
-    password = prompt("Ingrese su contraseña.");
 }
-alert("Bienvenido "+user+".");
+
+while(user.toLowerCase() == "martin064"){
+    password = prompt("Ingrese su password:");
+    if(password == "Mrt.064"){
+        alert("Bienvenido "+user+".");
+        break;
+    }else{
+        alert("Usuario y/o contraseña incorrecto, intente nuevamente.");
+    }
+}
